@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create a to-do list using DOM manipulation</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body><div class="topbar"><div class="nav"><strong>HTML • CSS • JavaScript Lab</strong>
+<span><a href="../../index.html">Home</a> <a href="../../javascript/index.html">Back to JavaScript Programs</a></span></div></div>
+<main class="container"><div class="hero"><span class="badge">JavaScript Programs</span><h1>Create a to-do list using DOM manipulation</h1><p>Working JavaScript practical: Create a to-do list using DOM manipulation.</p></div>
+<div class="panel demo"><div class='row'><input id='task' placeholder='Enter task'><button class='btn' onclick='add()'>Add</button></div><ul id='list'></ul><script>function add(){if(!task.value.trim())return;let li=document.createElement("li");li.textContent=task.value;li.onclick=()=>li.remove();list.appendChild(li);task.value=""}</script></div></main><footer>Practical Programs Website • Mahesh Karanki</footer><script src="../../assets/theme.js"></script><script src="../../assets/lab.js"></script></body></html>

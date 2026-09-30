@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create a number guessing game</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body><div class="topbar"><div class="nav"><strong>HTML • CSS • JavaScript Lab</strong>
+<span><a href="../../index.html">Home</a> <a href="../../javascript/index.html">Back to JavaScript Programs</a></span></div></div>
+<main class="container"><div class="hero"><span class="badge">JavaScript Programs</span><h1>Create a number guessing game</h1><p>Working JavaScript practical: Create a number guessing game.</p></div>
+<div class="panel demo"><p>Guess a number from 1–10.</p><input id='g' type='number' min='1' max='10'><button class='btn' onclick='check()'>Guess</button><div id='out' class='result'></div><script>let target=Math.floor(Math.random()*10)+1;function check(){out.textContent=(+g.value===target)?"Correct!":"Try again."}</script></div></main><footer>Practical Programs Website • Mahesh Karanki</footer><script src="../../assets/theme.js"></script><script src="../../assets/lab.js"></script></body></html>
