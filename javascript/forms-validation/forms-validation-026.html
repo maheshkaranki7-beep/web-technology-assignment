@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create a password strength meter</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body><div class="topbar"><div class="nav"><strong>HTML • CSS • JavaScript Lab</strong>
+<span><a href="../../index.html">Home</a> <a href="../../javascript/index.html">Back to JavaScript Programs</a></span></div></div>
+<main class="container"><div class="hero"><span class="badge">JavaScript Programs</span><h1>Create a password strength meter</h1><p>Working JavaScript practical: Create a password strength meter.</p></div>
+<div class="panel demo"><input id='pw' type='password' placeholder='Password'><div id='out' class='result'></div><script>pw.oninput=()=>{let p=pw.value,s=(p.length>=8)+( /[A-Z]/.test(p))+( /[0-9]/.test(p))+( /[^A-Za-z0-9]/.test(p));out.textContent="Strength score: "+s+"/4"}</script></div></main><footer>Practical Programs Website • Mahesh Karanki</footer><script src="../../assets/theme.js"></script><script src="../../assets/lab.js"></script></body></html>

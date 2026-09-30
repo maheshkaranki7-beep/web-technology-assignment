@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create a marks entry form and calculate total, average, and grade</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body><div class="topbar"><div class="nav"><strong>HTML • CSS • JavaScript Lab</strong>
+<span><a href="../../index.html">Home</a> <a href="../../javascript/index.html">Back to JavaScript Programs</a></span></div></div>
+<main class="container"><div class="hero"><span class="badge">JavaScript Programs</span><h1>Create a marks entry form and calculate total, average, and grade</h1><p>Working JavaScript practical: Create a marks entry form and calculate total, average, and grade.</p></div>
+<div class="panel demo"><input id='m' value='80,75,90,85'><button class='btn' onclick='let a=m.value.split(",").map(Number),avg=a.reduce((x,y)=>x+y,0)/a.length;out.textContent=`Total: ${a.reduce((x,y)=>x+y,0)}, Average: ${avg.toFixed(2)}, Grade: ${avg>=90?"A+":avg>=80?"A":avg>=70?"B":"C"}`'>Calculate</button><div id='out' class='result'></div></div></main><footer>Practical Programs Website • Mahesh Karanki</footer><script src="../../assets/theme.js"></script><script src="../../assets/lab.js"></script></body></html>
